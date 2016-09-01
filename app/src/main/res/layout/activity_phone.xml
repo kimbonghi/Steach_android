@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.example.kimbonghi.steach_login.Activity.PhoneActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.07"
+        android:background="@mipmap/top_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_weight="0.26"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.44"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.03"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.04"
+                android:id="@+id/e01_backbtn"
+                android:background="@mipmap/back"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.23"
+                android:background="@mipmap/d04_search_contact"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.7"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.81"
+        android:weightSum="1"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="0.07"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.86"
+            android:weightSum="1"
+            android:background="@mipmap/d04_contactbackground"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.023"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.073"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="0.04"/>
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.92"
+                    android:background="@mipmap/d04_searchbar"
+                    android:completionThreshold="1"
+                    android:hint="Search"
+                    android:paddingLeft="15dp"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="0.04"/>
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.035"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.869">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/phonebooklist"
+                    android:clickable="true"
+                    android:divider="#000000"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="0.07"/>
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:layout_weight="0.04"/>
+
+    <!--<ListView
+        android:id="@+id/friends_listView"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:clickable="true"
+        android:layout_marginLeft="20dp"
+        android:background="#ffffff"
+        android:divider="@mipmap/contact_png_08"
+        android:fastScrollEnabled="false" />-->
+</LinearLayout>

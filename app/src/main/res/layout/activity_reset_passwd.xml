@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kimbonghi.steach_login.Activity.ResetPasswdActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="비밀번호 재설정을 위해"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="휴대폰 번호를 입력해주세요."
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ph_num" />
+
+    <Button
+        android:id="@+id/reset_nextbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#69a7de"
+        android:textColor="#ffffff"
+        android:text="다음"/>
+</LinearLayout>
